@@ -1,10 +1,52 @@
 .App {
   text-align: center;
 }
+
+.hero{
+height: 40px;
+text-align: center;
+background-color: #06181b;
+
+}
+.services{
+  height: 600px;
+  background-color: #8eb1b9;
+  
+  }
+.blog{
+    height: 600px;
+    background-color: #8885819f;
+    
+}
+.contact{
+  height: 600px;
+  background-color: #212324;
+  
+  }
 .link{
   text-decoration: none;
   display: inline;
   padding: 20px 20px;
   font-weight: 700;
   font-size: large;
+  cursor: pointer;
 }
+.card{
+ width: 6000px;
+ float: inline-start;
+  display: flex;
+ 
+}
+.f{
+ 
+  color: #a5b3b6;
+}
+.big{
+  font-weight: 700;
+  
+}
+.v{
+  color:rgba(21, 120, 201, 0.938)
+}
+
+
