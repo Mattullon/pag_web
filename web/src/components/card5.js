@@ -1,21 +1,23 @@
 import React from 'react';
 import { Button, Card, CardActions, CardContent, CardMedia, Typography } from '@mui/material';
-import imag3 from '../image/imag3.jpeg';
+import imag4 from '../image/imag5.jpeg';
 
-export function MediaCard3() {
+export function MediaCard5() {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
         height="140"
-        image={imag3}
-        alt="green iguana" />
+        image={imag4}
+        alt="green iguana" 
+        />
+        
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
         Mobile Engineer
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Nicolas Benitez
+        Jeffrey Dahmer
         </Typography>
       </CardContent>
       <CardActions>

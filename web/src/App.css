@@ -3,25 +3,38 @@
 }
 
 .hero{
-height: 40px;
+height: 60px;
 text-align: center;
 background-color: #06181b;
 
 }
-.services{
-  height: 600px;
+.inicio{
+  
   background-color: #8eb1b9;
+  box-sizing: border-box;
+  width: 100%;
+  border: solid #5B6DCD 10px;
+  padding: 5px;
+  
+  
   
   }
-.blog{
-    height: 600px;
-    background-color: #8885819f;
+.fundadores{
     
+    background-color: #8885819f;
+    box-sizing: border-box;
+    width: 100%;
+    border: solid #5B6DCD 10px;
+    padding: 5px;
+    justify-content: flex-start;
 }
-.contact{
+.login{
   height: 600px;
-  background-color: #212324;
-  
+  background-color: grey;
+  box-sizing: border-box;
+width: 100%;
+border: solid #5B6DCD 10px;
+padding: 5px;
   }
 .link{
   text-decoration: none;
@@ -30,23 +43,56 @@ background-color: #06181b;
   font-weight: 700;
   font-size: large;
   cursor: pointer;
+  flex-direction: column;
 }
-.card{
- width: 6000px;
- float: inline-start;
-  display: flex;
- 
-}
+
+
 .f{
  
   color: #a5b3b6;
 }
 .big{
-  font-weight: 700;
+  font-size: 2.2em;
   
 }
-.v{
-  color:rgba(21, 120, 201, 0.938)
+.Tparrafo{
+  text-align: left;
+  font-size: 1.2em;
+  padding: 50px;
 }
 
 
+
+
+.card{
+  
+  padding: 20px;
+  border: 1px solid black;
+  margin: 0 auto;
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
+.card1{
+  display: flex;
+}
+.card5{
+ order: 5;
+ flex-direction: column;
+}
+.tbar{
+  
+  justify-content: space-around;
+
+
+
+ 
+}
+.d{
+  background-color: #06181b;
+}
+.texto_login{
+  text-align: center;
+
+}

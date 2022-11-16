@@ -16,7 +16,7 @@ export function MediaCard() {
           Full-stack Engineer
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            
+            Jose Sosa
           </Typography>
         </CardContent>
         <CardActions>
