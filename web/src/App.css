@@ -28,14 +28,8 @@ background-color: #06181b;
     padding: 5px;
     justify-content: flex-start;
 }
-.login{
-  height: 600px;
-  background-color: grey;
-  box-sizing: border-box;
-width: 100%;
-border: solid #5B6DCD 10px;
-padding: 5px;
-  }
+
+  
 .link{
   text-decoration: none;
   display: inline;
@@ -64,23 +58,8 @@ padding: 5px;
 
 
 
-.card{
-  
-  padding: 20px;
-  border: 1px solid black;
-  margin: 0 auto;
-  display: flex;
-  align-content: flex-start;
-  flex-wrap: wrap;
-  justify-content:space-between;
-}
-.card1{
-  display: flex;
-}
-.card5{
- order: 5;
- flex-direction: column;
-}
+
+
 .tbar{
   
   justify-content: space-around;
