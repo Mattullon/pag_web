@@ -1,12 +1,14 @@
 import "./App.css";
 import { useRef } from "react";
 import { MediaCard, MediaCard2, MediaCard3,MediaCard4,MediaCard5 } from "./components/card";
-import { Container,AppBar,Grid,IconButton,Toolbar,} from "@mui/material";
+import { AppBar,Grid,IconButton,Toolbar,} from "@mui/material";
 import { Link } from "react-router-dom";
-
+import React from 'react';
+import MenuIcon from '@mui/icons-material/Menu';
 function App() {
   const inicio = useRef(null);
   const developers = useRef(null);
+  
   const irAlaSeccion = (elementRef) => {
     window.scrollTo({
       top: elementRef.current.offsetTop,
@@ -16,9 +18,15 @@ function App() {
   return (
     <div className="App">
       <div className="hero">
-        <Container>
-          <AppBar>
-            <Toolbar className="tbar">
+       
+        <AppBar position="static" color="primary">
+    
+            <Toolbar  variant="dense" className="tbar">
+            <IconButton size="large" edge="start"
+            color="inherit"
+            aria-label="menu"
+            sx={{ mr: 2 }} />
+               <MenuIcon />
               <IconButton
                 onClick={() => irAlaSeccion(inicio)}
                 className="link"
@@ -39,7 +47,7 @@ function App() {
         
             </Toolbar>
           </AppBar>
-        </Container>
+       
       </div>
       <div ref={inicio} className="inicio">
         <h3 className="big"> BIENVENIDOS ! </h3>
@@ -64,39 +72,44 @@ function App() {
             completed our technical vetting which includes a 2-stage interview
             process, soft-skills test and a technical assessment.
           </p>{" "}
+          <Link 
+          component="button"
+          variant="body2" to="cardss"> hola </Link>
         </div>
         
           
           
        
-      </div>
-      <div ref={developers} className="fundadores">
-        <h3 className="strong"> DEVELOPERS </h3>
-        <Grid container spacing={4} justifyContent={"center"}>
-          <Grid item  >
-            <MediaCard />
-          </Grid>
-          <Grid item >
-            <MediaCard2 />
-          </Grid>
-          <Grid item>
-            <MediaCard3 />
-          </Grid>
-          <Grid item>
-            <MediaCard4 />
-          </Grid>
-          <Grid item>
-          <Link 
-          component="button"
-          variant="body2" to="login"> INSCRIPCION </Link>
-            <MediaCard5 />
-          </Grid>
-        </Grid>
-      </div>
+      </div> 
+      <div>
+        
+          <Cardss> </Cardss>
+        
       
+      </div>
     </div>
   );
 }
 
 export default App;
 
+const Cardss = ()=>  <div  className="fundadores">
+<h3 className="strong"> DEVELOPERS </h3>
+<Grid container spacing={4} justifyContent={"center"}>
+  <Grid item  >
+    <MediaCard />
+  </Grid>
+  <Grid item >
+    <MediaCard2 />
+  </Grid>
+  <Grid item>
+    <MediaCard3 />
+  </Grid>
+  <Grid item>
+    <MediaCard4 />
+  </Grid>
+  <Grid item>
+    <MediaCard5 />
+  </Grid>
+</Grid>
+</div>

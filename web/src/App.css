@@ -2,12 +2,7 @@
   text-align: center;
 }
 
-.hero{
-height: 60px;
-text-align: center;
-background-color: #06181b;
 
-}
 .inicio{
   
   background-color: #8eb1b9;
@@ -62,7 +57,7 @@ background-color: #06181b;
 
 .tbar{
   
-  justify-content: space-around;
+  justify-content: center;
 
 
 

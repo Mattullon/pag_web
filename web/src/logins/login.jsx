@@ -78,12 +78,12 @@ export default function Login() {
             </Button>
             <Grid container>
               <Grid item xs>
-                <Link variant="body2" to="LoginUp" >
+                <Link variant="body2" component="button" to="LoginUp" >
                   Olvido la contrase?
                 </Link>
               </Grid>
               <Grid item>
-                <Link href="LoginUp" >
+                <Link variant="body2" href="LoginUp" >
                   Crear Cuenta 
                 </Link>
               </Grid>
